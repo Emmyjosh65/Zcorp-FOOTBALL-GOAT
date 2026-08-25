@@ -191,8 +191,9 @@ const PLAYER_BIOGRAPHIES = {
 // Add new video objects inside each player's array.
 // Each object needs: url, title, description, likes, views
 // Use .mp4 or .mov URLs. Invalid videos will show a retry option.
+//
 // =========================================
-// ADD MORE MESSI REELS HERE
+// ADD MORE MESSI REELS HERE — Just copy the object pattern below
 // =========================================
 const PLAYER_REELS = {
     "Lionel Messi": [
@@ -202,48 +203,370 @@ const PLAYER_REELS = {
             description: "Messi magic — dribbling and brilliance",
             likes: 0,
             views: 0
-        }
-    ],
-    // =========================================
-    // ADD MORE RONALDO REELS HERE
-    // =========================================
-    "Cristiano Ronaldo": [
+        },
         {
-            url: "",
-            title: "Cristiano Ronaldo",
-            description: "Ronaldo greatness — power and precision",
+            url: "https://videotourl.com/videos/1787673486899-5697046e-3dd7-4b39-9d4e-73280349c693.mp4",
+            title: "Messi & Ronaldo",
+            description: "Messi and Ronaldo — two legends",
             likes: 0,
             views: 0
         }
     ],
+
+    // =========================================
+    // CRISTIANO RONALDO — 39 REELS
+    // ADD MORE RONALDO REELS HERE
+    // =========================================
+    "Cristiano Ronaldo": [
+        // --- RONALDO REEL 1 ---
+        {
+            url: "https://videotourl.com/videos/1787672301508-b100fdc6-64f1-4ed7-bb56-dbd9e2900f61.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo greatness — power and precision",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 2 ---
+        {
+            url: "https://videotourl.com/videos/1787672325208-a255be43-623f-41a8-bfd9-2e317202f349.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — unstoppable force",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 3 ---
+        {
+            url: "https://videotourl.com/videos/1787672347860-49fa231a-43f7-44dd-b33e-554e4a89fee7.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — clinical finishing",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 4 ---
+        {
+            url: "https://videotourl.com/videos/1787672368929-3115557e-c04c-46a1-a56b-c826eabe2c27.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — aerial dominance",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 5 ---
+        {
+            url: "https://videotourl.com/videos/1787672386510-f2fba2ca-12fd-41dc-ad9f-43c516280ab2.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — signature celebration",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 6 ---
+        {
+            url: "https://videotourl.com/videos/1787672409353-60285af5-8ad1-41b3-beb3-4aba009f8cc7.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — big game player",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 7 ---
+        {
+            url: "https://videotourl.com/videos/1787672445230-f6991749-12a8-439f-9671-f0d30da41e6e.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — free kick master",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 8 ---
+        {
+            url: "https://videotourl.com/videos/1787672466012-66aed74a-0c6f-49fc-a65f-0692c3d451f0.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Champions League hero",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 9 ---
+        {
+            url: "https://videotourl.com/videos/1787672484761-cc5b0e91-2dc3-4f11-bc20-c53764560e43.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — speed and skill",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 10 ---
+        {
+            url: "https://videotourl.com/videos/1787672520625-3e9b9b03-33bf-4222-a8d1-744b1e1e4c97.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — goal machine",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 11 ---
+        {
+            url: "https://videotourl.com/videos/1787672567733-124aad5e-7876-4723-978e-bd06ba4e1087.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — legendary moments",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 12 ---
+        {
+            url: "https://videotourl.com/videos/1787672586679-67e871a8-6aa5-43b5-afc1-9295d9d2e591.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — technique and power",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 13 ---
+        {
+            url: "https://videotourl.com/videos/1787672604409-92c7e0a4-b20b-4e23-a2a7-37654bd82d6d.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — the icon",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 14 ---
+        {
+            url: "https://videotourl.com/videos/1787672621310-57ea0347-c06f-4302-9426-8e8949e86b6d.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — World Cup moments",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 15 ---
+        {
+            url: "https://videotourl.com/videos/1787672656278-5b17b6e3-696e-41c8-a106-85b90bd74717.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — record breaker",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 16 ---
+        {
+            url: "https://videotourl.com/videos/1787672678228-8f1dac15-c273-4427-a8d2-248aba5138c3.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — hat-trick hero",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 17 ---
+        {
+            url: "https://videotourl.com/videos/1787672696943-d8d30570-b35c-4589-bcf4-51a420642986.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — SIUUU celebration",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 18 ---
+        {
+            url: "https://videotourl.com/videos/1787672719518-e8409e5f-247f-482f-b841-d6b9bd262ca1.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — clutch moments",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 19 ---
+        {
+            url: "https://videotourl.com/videos/1787672737860-4aea1b7b-a0e2-4817-a755-32952fabb5e1.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — legendary career",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 20 ---
+        {
+            url: "https://videotourl.com/videos/1787672759809-d8ce84fc-fdbe-411d-b3ad-eda552b7a181.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — the phenomenon",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 21 ---
+        {
+            url: "https://videotourl.com/videos/1787672815637-7b0b6265-a9c6-44d2-950c-f0beeb9e4386.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — European glory",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 22 ---
+        {
+            url: "https://videotourl.com/videos/1787672854431-50305396-b367-4014-95fc-c76826084126.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — skill and flair",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 23 ---
+        {
+            url: "https://videotourl.com/videos/1787672887890-78495782-1c29-450e-979c-c16d59bed4da.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — international star",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 24 ---
+        {
+            url: "https://videotourl.com/videos/1787672904813-13ee64f1-23c9-40cd-8f5b-cadda3495b70.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Manchester United days",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 25 ---
+        {
+            url: "https://videotourl.com/videos/1787672921557-77faac1f-0253-403a-a5d6-91978f3a7c7f.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Real Madrid legend",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 26 ---
+        {
+            url: "https://videotourl.com/videos/1787672942386-cb427c77-868e-486a-a188-dc6d4dfd8e1f.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Juventus journey",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 27 ---
+        {
+            url: "https://videotourl.com/videos/1787672961768-5027058a-61e2-40aa-a0a4-efc3c3ddbc26.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Portugal captain",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 28 ---
+        {
+            url: "https://videotourl.com/videos/1787672984746-d1ac7c6a-b196-4bd6-856b-0f501d6e724d.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Euro champion",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 29 ---
+        {
+            url: "https://videotourl.com/videos/1787673248969-8856f1d6-5d77-40a3-9c4d-fa19da4413b6.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — Al Nassr era",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 30 ---
+        {
+            url: "https://videotourl.com/videos/1787673277788-cef2a7dd-6a95-425d-af7e-eca0dd15c9f2.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — goal-scoring record",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 31 ---
+        {
+            url: "https://videotourl.com/videos/1787673296977-d598fb8c-29d8-46c3-b030-ba927083c72f.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — the competitor",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 32 ---
+        {
+            url: "https://videotourl.com/videos/1787673327850-144c0fab-4606-485f-ab00-b1610d4b9e9c.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — five-time Ballon d'Or",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 33 ---
+        {
+            url: "https://videotourl.com/videos/1787673347917-a2f619f9-975d-43d3-bb6c-b89aa6bf0811.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — the athlete",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 34 ---
+        {
+            url: "https://videotourl.com/videos/1787673364961-9aaa5831-66a4-4a3c-b8c2-f8c293cf840c.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — impossible angles",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 35 ---
+        {
+            url: "https://videotourl.com/videos/1787673383248-e53013fc-e3e6-46c9-ac62-e370fb41fbf2.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — clutch headers",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 36 ---
+        {
+            url: "https://videotourl.com/videos/1787673401200-8a977c39-c296-4905-942f-8aebefa0b150.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — long-range strikes",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 37 ---
+        {
+            url: "https://videotourl.com/videos/1787673424360-3673c2f1-7f70-4866-9d72-d513f01f381c.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — leadership and passion",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 38 ---
+        {
+            url: "https://videotourl.com/videos/1787673439807-8bdc3988-6316-4ec1-8ed5-16693af49f3a.mov",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — the greatest stage",
+            likes: 0,
+            views: 0
+        },
+        // --- RONALDO REEL 39 ---
+        {
+            url: "https://videotourl.com/videos/1787673461889-be79e1ae-6750-478a-8f9c-1cb13c31cb27.mp4",
+            title: "Cristiano Ronaldo",
+            description: "Ronaldo — legacy of a GOAT",
+            likes: 0,
+            views: 0
+        }
+    ],
+
     // =========================================
     // ADD MORE MARADONA REELS HERE
     // =========================================
     "Diego Maradona": [],
+
     // =========================================
     // ADD MORE PELÉ REELS HERE
     // =========================================
     "Pelé": [],
+
     // =========================================
     // ADD MORE CRUYFF REELS HERE
     // =========================================
     "Johan Cruyff": [],
+
     // =========================================
     // ADD MORE ZIDANE REELS HERE
     // =========================================
     "Zinedine Zidane": [],
+
     // =========================================
     // ADD MORE RONALDINHO REELS HERE
     // =========================================
     "Ronaldinho": [],
+
     // =========================================
     // ADD MORE RONALDO NAZÁRIO REELS HERE
     // =========================================
     "Ronaldo Nazário": [],
+
     // =========================================
     // ADD MORE BECKENBAUER REELS HERE
     // =========================================
     "Franz Beckenbauer": [],
+
     // =========================================
     // ADD MORE DI STÉFANO REELS HERE
     // =========================================
@@ -489,7 +812,6 @@ function handleSearch() {
 
     const results = [];
 
-    // Search player names, nationalities, positions
     TOP_10_GOAT_FOOTBALLERS.forEach(name => {
         if (name.toLowerCase().includes(query)) {
             results.push({ type: 'player', name, label: name, sub: `${getGoatScore(name)} Reels` });
@@ -502,7 +824,6 @@ function handleSearch() {
         }
     });
 
-    // Search reels by title/description
     TOP_10_GOAT_FOOTBALLERS.forEach(player => {
         (PLAYER_REELS[player] || []).forEach(reel => {
             if ((reel.title && reel.title.toLowerCase().includes(query)) ||
@@ -512,7 +833,6 @@ function handleSearch() {
         });
     });
 
-    // Search special reels
     Object.keys(SPECIAL_REELS).forEach(player => {
         if (player.toLowerCase().includes(query)) {
             results.push({ type: 'player', name: player, label: player, sub: 'Featured Player' });
@@ -551,7 +871,6 @@ function handleSearch() {
 function renderHome() {
     const rankings = getRankings();
 
-    // Top 3 preview
     for (let i = 0; i < 3; i++) {
         const card = document.getElementById(`top3-${i + 1}`);
         if (rankings[i]) {
@@ -567,7 +886,6 @@ function renderHome() {
         }
     }
 
-    // GOAT of the Moment
     const goat = getCurrentNumberOne();
     const goatSection = document.getElementById('goatMomentSection');
     if (goat && goat.reelCount > 0) {
@@ -578,21 +896,18 @@ function renderHome() {
         goatSection.style.display = 'none';
     }
 
-    // Stats
     document.getElementById('statTotalReels').textContent = getTotalReels();
     const no1 = getCurrentNumberOne();
     document.getElementById('statCurrentNo1').textContent = (no1 && no1.reelCount > 0) ? no1.name : '—';
     const featured = getMostFeatured();
     document.getElementById('statMostFeatured').textContent = (featured && featured.reelCount > 0) ? featured.name : '—';
 
-    // Player grid
     renderPlayerGrid();
 }
 
 function renderPlayerGrid() {
     const grid = document.getElementById('playerGrid');
     const rankings = getRankings();
-
     const medals = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟'];
 
     grid.innerHTML = rankings.map((player, idx) => {
@@ -719,10 +1034,8 @@ function closeModal() {
 let currentReelFilter = 'all';
 
 function renderReels() {
-    const container = document.getElementById('reelsContainer');
     const filters = document.getElementById('reelFilters');
 
-    // Build filter buttons
     let filterHtml = '<button class="reel-filter active" data-filter="all" role="tab" aria-selected="true">ALL</button>';
     TOP_10_GOAT_FOOTBALLERS.forEach(name => {
         filterHtml += `<button class="reel-filter" data-filter="${name}" role="tab">${name.toUpperCase()}</button>`;
@@ -730,7 +1043,6 @@ function renderReels() {
     filterHtml += '<button class="reel-filter" data-filter="featured" role="tab">FEATURED</button>';
     filters.innerHTML = filterHtml;
 
-    // Attach filter events
     filters.querySelectorAll('.reel-filter').forEach(btn => {
         btn.addEventListener('click', () => {
             filters.querySelectorAll('.reel-filter').forEach(b => {
@@ -792,7 +1104,6 @@ function renderReelFeed() {
         });
     }
 
-    // Empty state
     if (reels.length === 0) {
         const filterForWa = currentReelFilter !== 'all' ? currentReelFilter : 'a player';
         container.innerHTML = `
@@ -890,7 +1201,6 @@ function setupReelAutoplay() {
     videos.forEach(v => observer.observe(v));
     window._reelObserver = observer;
 
-    // Error handling per video
     videos.forEach(v => {
         v.addEventListener('error', () => handleVideoError(v));
     });
