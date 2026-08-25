@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ZCORP Football Hall of Fame — Who's the GOAT?</title>
+    <meta name="description" content="Discover football legends, watch their greatest moments and see who currently leads the ZCORP Football Hall of Fame.">
+    <meta property="og:title" content="ZCORP Football Hall of Fame — Who's the GOAT?">
+    <meta property="og:description" content="Discover football legends, watch their greatest moments and see who currently leads the ZCORP Football Hall of Fame.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.phototourl.com/free/2026-08-25-9a5c3953-061b-470f-83c3-c188fb6de320.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZCORP Football Hall of Fame — Who's the GOAT?">
+    <meta name="twitter:description" content="Discover football legends, watch their greatest moments and see who currently leads the ZCORP Football Hall of Fame.">
+    <meta name="twitter:image" content="https://cdn.phototourl.com/free/2026-08-25-9a5c3953-061b-470f-83c3-c188fb6de320.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== DESKTOP TOP NAVIGATION ===== -->
+    <nav class="desktop-nav" id="desktopNav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <span class="nav-logo">ZCORP</span>
+                <span class="nav-brand-sub">FOOTBALL HALL OF FAME</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <button class="nav-link active" data-page="home" aria-current="page">🏠 Home</button>
+                <button class="nav-link" data-page="reels">🎬 Reels</button>
+                <button class="nav-link" data-page="ranks">🏆 See Ranks</button>
+                <button class="nav-link" data-page="about">ℹ️ About</button>
+                <button class="nav-link" data-page="support">💬 Support</button>
+            </div>
+            <div class="nav-search" role="search">
+                <input type="text" id="globalSearchInput" class="search-input" placeholder="Search football legends..." aria-label="Search football legends">
+                <div class="search-results" id="searchResults" role="listbox"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE BOTTOM NAVIGATION ===== -->
+    <nav class="mobile-bottom-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+        <button class="bottom-nav-btn active" data-page="home" aria-current="page">
+            <span class="bottom-nav-icon">🏠</span>
+            <span class="bottom-nav-label">Home</span>
+        </button>
+        <button class="bottom-nav-btn" data-page="reels">
+            <span class="bottom-nav-icon">🎬</span>
+            <span class="bottom-nav-label">Reels</span>
+        </button>
+        <button class="bottom-nav-btn" data-page="ranks">
+            <span class="bottom-nav-icon">🏆</span>
+            <span class="bottom-nav-label">Ranks</span>
+        </button>
+        <button class="bottom-nav-btn" data-page="about">
+            <span class="bottom-nav-icon">ℹ️</span>
+            <span class="bottom-nav-label">About</span>
+        </button>
+        <button class="bottom-nav-btn" data-page="support">
+            <span class="bottom-nav-icon">💬</span>
+            <span class="bottom-nav-label">Support</span>
+        </button>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="mainContent" class="main-content">
+
+        <!-- ===== HOME PAGE ===== -->
+        <section class="page active" id="page-home">
+
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="hero-bg">
+                    <div class="hero-image-wrapper">
+                        <img src="https://cdn.phototourl.com/free/2026-08-25-9a5c3953-061b-470f-83c3-c188fb6de320.jpg" alt="ZCORP Football Hall of Fame — Legendary players" class="hero-image" loading="eager">
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-badge">ZCORP</div>
+                    <h1 class="hero-title">FOOTBALL<br>HALL OF FAME</h1>
+                    <p class="hero-subtitle">WHO'S THE GOAT?</p>
+                    <p class="hero-text">The ultimate football Hall of Fame where legends compete through their moments, memories and reels.</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="navigateTo('reels')">🎬 Watch Reels</button>
+                        <button class="btn-secondary" onclick="navigateTo('ranks')">🏆 See Rankings</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- GOAT of the Moment -->
+            <section class="section goat-moment-section" id="goatMomentSection" aria-label="GOAT of the Moment">
+                <div class="goat-moment-card" id="goatMomentCard">
+                    <div class="goat-crown">👑</div>
+                    <span class="goat-moment-label">GOAT OF THE MOMENT</span>
+                    <span class="goat-moment-name" id="goatMomentName">—</span>
+                    <span class="goat-moment-reels" id="goatMomentReels">0 REELS</span>
+                    <span class="goat-moment-rank">#1 IN ZCORP HALL OF FAME</span>
+                </div>
+            </section>
+
+            <!-- Live Top 3 Preview -->
+            <section class="section" aria-label="Live top 3 rankings">
+                <div class="section-header">
+                    <h2 class="section-title">🏆 LIVE TOP 3</h2>
+                    <p class="section-subtitle">Updated in real-time based on reel counts</p>
+                </div>
+                <div class="top3-grid" id="top3Grid">
+                    <div class="top3-card" id="top3-1">
+                        <div class="top3-medal gold">🥇</div>
+                        <div class="top3-rank">#1</div>
+                        <div class="top3-avatar"><div class="player-placeholder">?</div></div>
+                        <div class="top3-name">—</div>
+                        <div class="top3-reels">0 Reels</div>
+                    </div>
+                    <div class="top3-card" id="top3-2">
+                        <div class="top3-medal silver">🥈</div>
+                        <div class="top3-rank">#2</div>
+                        <div class="top3-avatar"><div class="player-placeholder">?</div></div>
+                        <div class="top3-name">—</div>
+                        <div class="top3-reels">0 Reels</div>
+                    </div>
+                    <div class="top3-card" id="top3-3">
+                        <div class="top3-medal bronze">🥉</div>
+                        <div class="top3-rank">#3</div>
+                        <div class="top3-avatar"><div class="player-placeholder">?</div></div>
+                        <div class="top3-name">—</div>
+                        <div class="top3-reels">0 Reels</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hall of Fame Introduction -->
+            <section class="section" aria-label="About the Hall of Fame">
+                <div class="hof-intro glass-card">
+                    <h2>⚽ THE HALL OF FAME</h2>
+                    <p>ZCORP Football Hall of Fame is a community-driven football ranking where legendary players earn their position through the number of reels dedicated to them. The more moments you share, the higher they rise.</p>
+                </div>
+            </section>
+
+            <!-- Stats Bar -->
+            <section class="section" aria-label="Statistics">
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-card glass-card">
+                        <span class="stat-number">10</span>
+                        <span class="stat-label">TOTAL LEGENDS</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-number" id="statTotalReels">0</span>
+                        <span class="stat-label">TOTAL REELS</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-number" id="statCurrentNo1">—</span>
+                        <span class="stat-label">CURRENT #1</span>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-number" id="statMostFeatured">—</span>
+                        <span class="stat-label">MOST FEATURED</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Legends -->
+            <section class="section" aria-label="All featured legends">
+                <div class="section-header">
+                    <h2 class="section-title">⭐ FEATURED LEGENDS</h2>
+                    <p class="section-subtitle">The official Top 10 footballers of all time</p>
+                </div>
+                <div class="player-grid" id="playerGrid"></div>
+            </section>
+
+            <!-- Your GOAT is Missing -->
+            <section class="section" aria-label="Submit your GOAT">
+                <div class="cta-card glass-card">
+                    <h3>YOUR GOAT IS MISSING?</h3>
+                    <p>Think your GOAT deserves more moments in the Hall of Fame?</p>
+                    <a href="https://wa.me/2349066760078?text=Hello%20Zeus%2C%20I%20want%20to%20submit%20reels%20for%20the%20ZCORP%20Football%20Hall%20of%20Fame." target="_blank" rel="noopener" class="btn-primary">📤 SUBMIT REELS TO ZEUS</a>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- ===== REELS PAGE ===== -->
+        <section class="page" id="page-reels">
+            <div class="page-header">
+                <h1 class="page-title">🎬 REELS</h1>
+                <p class="page-subtitle">Watch legendary moments from the greatest footballers</p>
+            </div>
+
+            <!-- Reel Filters -->
+            <div class="reel-filters-wrapper" id="reelFiltersWrapper">
+                <div class="reel-filters" id="reelFilters" role="tablist" aria-label="Filter reels by player">
+                    <button class="reel-filter active" data-filter="all" role="tab" aria-selected="true">ALL</button>
+                </div>
+            </div>
+
+            <!-- Reels Feed -->
+            <div class="reels-container" id="reelsContainer" role="feed" aria-label="Video reels">
+                <p class="loading-text">Loading reels...</p>
+            </div>
+        </section>
+
+        <!-- ===== RANKINGS PAGE ===== -->
+        <section class="page" id="page-ranks">
+            <div class="page-header">
+                <h1 class="page-title">🏆 GOAT RANKINGS</h1>
+                <p class="page-subtitle">Rankings are calculated automatically using the number of reels currently available for each Hall of Fame player.</p>
+            </div>
+            <div class="rankings-leaderboard" id="rankingsLeaderboard">
+                <div class="loading-text">Calculating rankings...</div>
+            </div>
+
+            <!-- Empty database experience -->
+            <div class="empty-database glass-card" id="emptyDatabase" style="display:none;">
+                <div class="empty-icon">🏟️</div>
+                <h3>THE HALL OF FAME IS WAITING...</h3>
+                <p>No legendary moments have been added yet. Be the first to submit your GOAT.</p>
+                <a href="https://wa.me/2349066760078?text=Hello%20Zeus%2C%20I%20want%20to%20submit%20reels%20for%20the%20ZCORP%20Football%20Hall%20of%20Fame." target="_blank" rel="noopener" class="btn-primary">CONTACT ZEUS</a>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT PAGE ===== -->
+        <section class="page" id="page-about">
+            <div class="page-header">
+                <h1 class="page-title">ℹ️ ABOUT ZCORP</h1>
+            </div>
+            <div class="about-content">
+                <div class="glass-card about-intro">
+                    <p>ZCORP Football Hall of Fame is a football community project built around football legends, their history, achievements and memorable video moments. We believe every legendary player deserves to be remembered and celebrated through the moments that defined them.</p>
+                </div>
+
+                <h2 class="section-title" style="text-align:center;margin-top:3rem;">FOUNDING TEAM</h2>
+
+                <div class="team-grid">
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">⚡</div>
+                        <h3>ZEUS</h3>
+                        <p class="team-role">Founder / Creator</p>
+                        <p class="team-desc">Visionary behind the ZCORP Football Hall of Fame, building a community where football legends live forever through video moments.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">🎯</div>
+                        <h3>CJ COOL</h3>
+                        <p class="team-role">Founding Team</p>
+                        <p class="team-desc">Core member of the ZCORP organization, bringing football passion and community building to the Hall of Fame.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">🔥</div>
+                        <h3>KREMMZ</h3>
+                        <p class="team-role">Founding Team</p>
+                        <p class="team-desc">Founding team member dedicated to curating and celebrating the greatest football moments in history.</p>
+                    </div>
+                    <div class="team-card glass-card">
+                        <div class="team-avatar">👑</div>
+                        <h3>LORD PABLO</h3>
+                        <p class="team-role">Founding Team</p>
+                        <p class="team-desc">Founding team member committed to preserving the legacy of football's greatest icons.</p>
+                    </div>
+                </div>
+
+                <!-- Special Thanks -->
+                <section class="special-thanks" aria-label="Special Thanks">
+                    <h2 class="section-title" style="text-align:center;margin-top:3rem;">🎖️ SPECIAL THANKS</h2>
+                    <div class="thanks-grid">
+                        <div class="thanks-card glass-card">
+                            <h3>CJ COOL</h3>
+                            <p class="thanks-role">Founding Team</p>
+                            <a href="https://wa.me/2347075430118" target="_blank" rel="noopener" class="thanks-whatsapp">📞 07075430118</a>
+                        </div>
+                        <div class="thanks-card glass-card">
+                            <h3>KREMMZ</h3>
+                            <p class="thanks-role">Founding Team</p>
+                            <a href="https://wa.me/2349134814154" target="_blank" rel="noopener" class="thanks-whatsapp">📞 09134814154</a>
+                        </div>
+                        <div class="thanks-card glass-card">
+                            <h3>LORD PABLO</h3>
+                            <p class="thanks-role">Founding Team</p>
+                            <a href="https://wa.me/2347065803509" target="_blank" rel="noopener" class="thanks-whatsapp">📞 07065803509</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- ===== SUPPORT / CUSTOMER CARE PAGE ===== -->
+        <section class="page" id="page-support">
+            <div class="page-header">
+                <h1 class="page-title">💬 ZCORP CUSTOMER CARE</h1>
+                <p class="page-subtitle">We're here to help with everything ZCORP Football Hall of Fame.</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card glass-card">
+                    <div class="support-icon">🎬</div>
+                    <h3>Add a footballer's reels</h3>
+                    <p>Want to add reels for your favourite legend? Contact Zeus to submit videos.</p>
+                    <a href="https://wa.me/2349066760078?text=Hello%20Zeus%2C%20I%20want%20to%20add%20reels%20for%20a%20footballer%20to%20the%20ZCORP%20Football%20Hall%20of%20Fame." target="_blank" rel="noopener" class="btn-primary">Contact Zeus</a>
+                </div>
+                <div class="support-card glass-card">
+                    <div class="support-icon">⚠️</div>
+                    <h3>Report a broken video</h3>
+                    <p>Found a video that isn't working? Let us know so we can fix it.</p>
+                    <a href="https://wa.me/2349066760078?text=Hello%20Zeus%2C%20I%20want%20to%20report%20a%20broken%20video%20on%20the%20ZCORP%20Football%20Hall%20of%20Fame." target="_blank" rel="noopener" class="btn-primary">Contact Zeus</a>
+                </div>
+                <div class="support-card glass-card">
+                    <div class="support-icon">💡</div>
+                    <h3>Suggest a football legend</h3>
+                    <p>Know a legend who should be in the Hall of Fame? Send your suggestion.</p>
+                    <a href="https://wa.me/2349066760078?text=Hello%20Zeus%2C%20I%20want%20to%20suggest%20a%20football%20legend%20for%20the%20ZCORP%20Football%20Hall%20of%20Fame." target="_blank" rel="noopener" class="btn-primary">Contact Zeus</a>
+                </div>
+                <div class="support-card glass-card">
+                    <div class="support-icon">🤝</div>
+                    <h3>General support</h3>
+                    <p>Have a question, feedback or anything else? Reach out anytime.</p>
+                    <a href="https://wa.me/2349066760078?text=Hello%20Zeus%2C%20I%20have%20a%20question%20about%20the%20ZCORP%20Football%20Hall%20of%20Fame." target="_blank" rel="noopener" class="btn-primary">Contact Zeus</a>
+                </div>
+            </div>
+            <div class="chat-cta glass-card">
+                <h3>💬 CHAT WITH ZEUS</h3>
+                <p>Direct WhatsApp line for all Hall of Fame inquiries.</p>
+                <a href="https://wa.me/2349066760078" target="_blank" rel="noopener" class="btn-gold">📱 CHAT WITH ZEUS</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== PLAYER DETAIL MODAL ===== -->
+    <div class="modal-overlay" id="playerModal" role="dialog" aria-modal="true" aria-label="Player details">
+        <div class="modal-content" id="modalContent">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <div class="modal-loading">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
